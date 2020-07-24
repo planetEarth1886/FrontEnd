@@ -8,16 +8,19 @@ import Card from './Card';
 
 import defaultMarkers from "./markers";
 
+import { defaultBarMarkerOptions, defaultDotMarkerOptions } from "react-globe";
+
 function getTooltipContent(marker) {
   return `CITY: ${marker.city} (Value: ${marker.value})`;
 }
 
+
 function App() {
-  const randomMarkers = defaultMarkers.map(marker => ({
+  const markers = defaultMarkers.map(marker => ({
     ...marker,
     value: Math.floor(Math.random() * 100)
   }));
-  const [markers, setMarkers] = useState([]);
+  // const [markers] = useState([]);
   const [event, setEvent] = useState(null);
   const [details, setDetails] = useState(null);
   function onClickMarker(marker, markerObject, event) {
@@ -43,13 +46,21 @@ function App() {
       <ReactGlobe
         markers={markers}
         markerOptions={{
+<<<<<<< HEAD
+=======
+          getTooltipContent,
+>>>>>>> upstream/master
           activeScale: 1.1,
           enableTooltip: true,
           enterAnimationDuration: 3000,
           enterEasingFunction: ['Bounce', 'InOut'],
           exitAnimationDuration: 3000,
           exitEasingFunction: ['Cubic', 'Out'],
+<<<<<<< HEAD
           getTooltipContent,
+=======
+          //getTooltipContent: marker => `${marker.city} (Sales: ${marker.value}.0M)`,
+>>>>>>> upstream/master
           radiusScaleRange: [0.01, 0.05],
         }}
         onClickMarker={onClickMarker}
@@ -73,7 +84,10 @@ function App() {
           </p>
         </div>
       )}
+<<<<<<< HEAD
     
+=======
+>>>>>>> upstream/master
       <CardStack
         height={500}
         width={400}
