@@ -7,16 +7,11 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
-<<<<<<< HEAD
     "react-cardstack": "^1.1.0",
     "react-dom": "^16.13.1",
     "react-globe": "^4.0.0",
     "react-scripts": "3.4.1",
     "three": "^0.118.3"
-=======
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
->>>>>>> 61cea4d... Initialize project using Create React App
   },
   "scripts": {
     "start": "react-scripts start",
