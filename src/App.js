@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import ReactGlobe from "react-globe";
@@ -10,11 +9,11 @@ function getTooltipContent(marker) {
 }
 
 function App() {
-  const randomMarkers = defaultMarkers.map(marker => ({
+  const markers = defaultMarkers.map(marker => ({
     ...marker,
     value: Math.floor(Math.random() * 100)
   }));
-  const [markers, setMarkers] = useState([]);
+
   const [event, setEvent] = useState(null);
   const [details, setDetails] = useState(null);
   function onClickMarker(marker, markerObject, event) {
@@ -26,6 +25,7 @@ function App() {
     });
     setDetails(getTooltipContent(marker));
   }
+
   function onDefocus(previousCoordinates, event) {
     setEvent({
       type: "DEFOCUS",
@@ -40,7 +40,14 @@ function App() {
       <ReactGlobe
         markers={markers}
         markerOptions={{
-          getTooltipContent
+          getTooltipContent,
+          activeScale: 1.1,
+          enableTooltip: true,
+          enterAnimationDuration: 3000,
+          enterEasingFunction: ['Bounce', 'InOut'],
+          exitAnimationDuration: 3000,
+          exitEasingFunction: ['Cubic', 'Out'],
+          radiusScaleRange: [0.01, 0.05],
         }}
         onClickMarker={onClickMarker}
         onDefocus={onDefocus}
@@ -63,54 +70,12 @@ function App() {
           </p>
         </div>
       )}
-      <button onClick={() => setMarkers(randomMarkers)}>
-        Randomize markers
-      </button>
-      <button disabled={markers.length === 0} onClick={() => setMarkers([])}>
-        Clear markers
-      </button>
-      <button
-        disabled={markers.length === randomMarkers.length}
-        onClick={() => setMarkers([...markers, randomMarkers[markers.length]])}
-      >
-        Add marker
-      </button>
-      <button
-        disabled={markers.length === 0}
-        onClick={() => setMarkers(markers.slice(0, markers.length - 1))}
-      >
-        Remove marker
-      </button>
-=======
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
->>>>>>> 61cea4d... Initialize project using Create React App
+     
+    
+   
     </div>
   );
 }
 
-<<<<<<< HEAD
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-=======
-export default App;
->>>>>>> 61cea4d... Initialize project using Create React App

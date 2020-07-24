@@ -43,7 +43,14 @@ function App() {
       <ReactGlobe
         markers={markers}
         markerOptions={{
-          getTooltipContent
+          activeScale: 1.1,
+          enableTooltip: true,
+          enterAnimationDuration: 3000,
+          enterEasingFunction: ['Bounce', 'InOut'],
+          exitAnimationDuration: 3000,
+          exitEasingFunction: ['Cubic', 'Out'],
+          getTooltipContent,
+          radiusScaleRange: [0.01, 0.05],
         }}
         onClickMarker={onClickMarker}
         onDefocus={onDefocus}
@@ -66,24 +73,7 @@ function App() {
           </p>
         </div>
       )}
-      <button onClick={() => setMarkers(randomMarkers)}>
-        Randomize markers
-      </button>
-      <button disabled={markers.length === 0} onClick={() => setMarkers([])}>
-        Clear markers
-      </button>
-      <button
-        disabled={markers.length === randomMarkers.length}
-        onClick={() => setMarkers([...markers, randomMarkers[markers.length]])}
-      >
-        Add marker
-      </button>
-      <button
-        disabled={markers.length === 0}
-        onClick={() => setMarkers(markers.slice(0, markers.length - 1))}
-      >
-        Remove marker
-      </button>
+    
       <CardStack
         height={500}
         width={400}

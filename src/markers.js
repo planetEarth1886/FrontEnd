@@ -25,7 +25,7 @@ export default [
     city: 'Beijing',
     color: 'gold',
     coordinates: [39.9042, 116.4074],
-    value: 0,
+    value: 10,
   },
   {
     id: 5,
@@ -34,4 +34,11 @@ export default [
     coordinates: [51.5074, 0.1278],
     value: 80,
   },
+  {
+    id: 6,
+    city: 'Seoul',
+    color: 'red',
+    coordinates: [37.5642, 127.0016],
+    value: 40,
+  }
 ];
