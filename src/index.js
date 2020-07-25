@@ -31,6 +31,7 @@ function App() {
       pointerEventPosition: { x: event.clientX, y: event.clientY }
     });
     setDetails(getTooltipContent(marker));
+    //setDetails(showCard(marker));
   }
   function onDefocus(previousCoordinates, event) {
     setEvent({
@@ -42,7 +43,8 @@ function App() {
   }
 
   return (
-    <div style={{ width: "100vw", height: "96vh" }}>
+
+    <div style={{ width: "99vw", height: "97vh" }}>
       <ReactGlobe
         markers={markers}
         markerOptions={{
@@ -53,16 +55,18 @@ function App() {
           enterEasingFunction: ['Bounce', 'InOut'],
           exitAnimationDuration: 3000,
           exitEasingFunction: ['Cubic', 'Out'],
-          //getTooltipContent: marker => `${marker.city} (Sales: ${marker.value}.0M)`,
           radiusScaleRange: [0.01, 0.05],
         }}
         onClickMarker={onClickMarker}
         onDefocus={onDefocus}
+
+
       />
+
       {details && (
         <div
           style={{
-            background: "white",
+            //background: "white",
             position: "absolute",
             fontSize: 20,
             top: 0,
@@ -70,28 +74,24 @@ function App() {
             padding: 12
           }}
         >
-          <p>{details}</p>
+
+          {/* <p>{details}</p> */}
           <p>
-            EVENT: type={event.type}, position=
-            {JSON.stringify(event.pointerEventPosition)})
+            <div><CardStack
+              height={500}
+              width={400}
+              background='#f8f8f8'
+              hoverOffset={25}>
+              <Card background='#2980B9'>
+                <h1>Number 1</h1>
+              </Card>
+              <Card background='#27AE60'>
+                <h1>Number 2</h1>
+              </Card>
+            </CardStack></div>
           </p>
         </div>
       )}
-      <CardStack
-        height={500}
-        width={400}
-        background='#f8f8f8'
-        hoverOffset={25}>
-
-        <Card background='#2980B9'>
-          <h1>Number 1</h1>
-        </Card>
-
-        <Card background='#27AE60'>
-          <h1>Number 2</h1>
-        </Card>
-
-      </CardStack>
     </div>
   );
 }
