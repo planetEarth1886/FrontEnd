@@ -18,6 +18,7 @@ function getTooltipContent(marker) {
 
 
 function App() {
+
   const markers = defaultMarkers.map(marker => ({
     ...marker,
     value: Math.floor(Math.random() * 100)
@@ -25,6 +26,7 @@ function App() {
   // const [markers] = useState([]);
   const [event, setEvent] = useState(null);
   const [details, setDetails] = useState(null);
+
   function onClickMarker(marker, markerObject, event) {
     setEvent({
       type: "CLICK",
@@ -35,6 +37,7 @@ function App() {
     setDetails(getTooltipContent(marker));
     //setDetails(showCard(marker));
   }
+
   function onDefocus(previousCoordinates, event) {
     setEvent({
       type: "DEFOCUS",
@@ -76,6 +79,7 @@ function App() {
             padding: 10
           }}
         >
+
 
           {/* <p>{details}</p> */}
 
@@ -129,6 +133,7 @@ function App() {
         </div>
       )}
     </div>
+
   );
 }
 
