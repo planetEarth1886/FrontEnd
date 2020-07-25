@@ -73,6 +73,7 @@ class CardStack extends React.Component {
             background: this.props.background,
             height: this.props.height,
             width: this.props.width,
+            borderRadius: this.props.borderRadius,
         };
         return (
             <ul style={stackStyles}>
@@ -89,6 +90,7 @@ const styles = {
     overflow: 'hidden',
     padding: 0,
     margin: 0,
+    borderRadius: 10,
 };
 
 CardStack.propTypes = {

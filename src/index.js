@@ -72,9 +72,9 @@ function App() {
             //background: "white",
             position: "absolute",
             fontSize: 20,
-            top: 0,
-            right: 0,
-            padding: 12
+            top: 20,
+            right: 50,
+            padding: 10
           }}
         >
 
@@ -82,15 +82,41 @@ function App() {
           {/* <p>{details}</p> */}
           <p>
             <div><CardStack
-              height={500}
-              width={400}
-              background='#f8f8f8'
-              hoverOffset={25}>
-              <Card background='#2980B9'>
-                <h1>Number 1</h1>
+              height={650}
+              width={300}
+              //background='#f8f8f8'
+              hoverOffset={50}
+              borderRadius={15}>
+              <Card background='#6F2B2C' borderRadius={15}>
+                <h3>Number 1</h3>
               </Card>
-              <Card background='#27AE60'>
-                <h1>Number 2</h1>
+              <Card background='#924130' borderRadius={15}>
+                <h3>Number 2</h3>
+              </Card>
+              <Card background='#4D4B58' borderRadius={15}>
+                <h3>Number 3</h3>
+              </Card>
+              <Card background='#C5A763' borderRadius={15}>
+                <h3>Number 4</h3>
+                <a href="http://www.naver.com">abc</a>
+              </Card>
+              <Card background='#827F7B' borderRadius={15}>
+                <h3>Number 5</h3>
+              </Card>
+              <Card background='#5B4540' borderRadius={15}>
+                <h3>Number 6</h3>
+              </Card>
+              <Card background='#594F33' borderRadius={15}>
+                <h3>Number 7</h3>
+              </Card>
+              <Card background='#CDC2A2' borderRadius={15}>
+                <h3>Number 8</h3>
+              </Card>
+              <Card background='#758467' borderRadius={15}>
+                <h3>Number 9</h3>
+              </Card>
+              <Card background='#B6B36E' borderRadius={15}>
+                <h3>Number 10</h3>
               </Card>
             </CardStack></div>
           </p>
