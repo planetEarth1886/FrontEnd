@@ -35,12 +35,13 @@ class Card extends React.Component {
             transform,
             WebkitTransform: transform,
             height: this.props.height,
+            borderRadius: this.props.borderRadius,
         };
 
         return (
             <li
                 style={cardStyles}
-                onClick={this.handleClick.bind(this)}
+                //onClick={this.handleClick.bind(this)}
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}>
                 {this.props.children}
@@ -56,6 +57,7 @@ const styles = {
     cursor: 'pointer',
     transition: '0.5s transform ease',
     WebkitTransition: '-webkit-transform 0.5s ease',
+    borderRadius: 10,
 };
 
 export default Card;
