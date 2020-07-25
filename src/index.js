@@ -16,6 +16,7 @@ function getTooltipContent(marker) {
 
 
 function App() {
+
   const markers = defaultMarkers.map(marker => ({
     ...marker,
     value: Math.floor(Math.random() * 100)
@@ -23,6 +24,7 @@ function App() {
   // const [markers] = useState([]);
   const [event, setEvent] = useState(null);
   const [details, setDetails] = useState(null);
+
   function onClickMarker(marker, markerObject, event) {
     setEvent({
       type: "CLICK",
@@ -32,6 +34,7 @@ function App() {
     });
     setDetails(getTooltipContent(marker));
   }
+
   function onDefocus(previousCoordinates, event) {
     setEvent({
       type: "DEFOCUS",
@@ -46,30 +49,23 @@ function App() {
       <ReactGlobe
         markers={markers}
         markerOptions={{
-<<<<<<< HEAD
-=======
           getTooltipContent,
->>>>>>> upstream/master
           activeScale: 1.1,
           enableTooltip: true,
           enterAnimationDuration: 3000,
           enterEasingFunction: ['Bounce', 'InOut'],
           exitAnimationDuration: 3000,
           exitEasingFunction: ['Cubic', 'Out'],
-<<<<<<< HEAD
-          getTooltipContent,
-=======
-          //getTooltipContent: marker => `${marker.city} (Sales: ${marker.value}.0M)`,
->>>>>>> upstream/master
           radiusScaleRange: [0.01, 0.05],
         }}
         onClickMarker={onClickMarker}
         onDefocus={onDefocus}
       />
+
       {details && (
         <div
           style={{
-            background: "white",
+            background: "transparent",
             position: "absolute",
             fontSize: 20,
             top: 0,
@@ -78,32 +74,34 @@ function App() {
           }}
         >
           <p>{details}</p>
+
           <p>
-            EVENT: type={event.type}, position=
-            {JSON.stringify(event.pointerEventPosition)})
-          </p>
-        </div>
-      )}
-<<<<<<< HEAD
-    
-=======
->>>>>>> upstream/master
-      <CardStack
+            EVENT: type={event.type},
+            position={JSON.stringify(event.pointerEventPosition)}
+
+            <div>
+            <CardStack
         height={500}
         width={400}
         background='#f8f8f8'
         hoverOffset={25}>
-
         <Card background='#2980B9'>
           <h1>Number 1</h1>
         </Card>
-
         <Card background='#27AE60'>
           <h1>Number 2</h1>
         </Card>
+      </CardStack>  
+            </div>
+            
+          </p>
 
-      </CardStack>
+        </div>
+      )}
+
+    
     </div>
+
   );
 }
 
