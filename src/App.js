@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import ReactGlobe from "react-globe";
@@ -81,36 +80,10 @@ function App() {
       >
         Remove marker
       </button>
-=======
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
->>>>>>> 61cea4d... Initialize project using Create React App
     </div>
   );
 }
 
-<<<<<<< HEAD
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-=======
-export default App;
->>>>>>> 61cea4d... Initialize project using Create React App
+
