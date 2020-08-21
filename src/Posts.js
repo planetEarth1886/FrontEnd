@@ -21,7 +21,9 @@ class Posts extends Component {
     // 'https://planet-earth.run.goorm.io/json_result/?geo=KR'
     // 'https://my-json-server.typicode.com/planetEarth1886/countrydata/db'
     componentWillMount() {
-        fetch('https://raw.githubusercontent.com/planetEarth1886/backend/master/json_result/result_' + country + '.json')
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        // fetch('https://raw.githubusercontent.com/planetEarth1886/backend/master/json_result/result_' + country + '.json')
+        fetch(proxyurl + 'https://planet-earth.run.goorm.io/json_result/?geo=' + country)
             .then(res => res.json())
             .then(data => this.setState({
                 sizes: data.sizes,
