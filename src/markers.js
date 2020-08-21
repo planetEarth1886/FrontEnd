@@ -39,14 +39,14 @@ export default [
     coordinates: [50.51, 4.21],
     value: 80,
   },
-  {
+  /* {
     id: 6,
     city: 'Brazil',
     code: 'BR',
     color: '#B53D32',
     coordinates: [-15.48, -47.54],
     value: 10,
-  },
+  },*/
   {
     id: 7,
     city: 'Canada',
@@ -55,14 +55,14 @@ export default [
     coordinates: [45.2515, -75.4124],
     value: 10,
   },
-  {
+  /* {
     id: 8,
-    city: 'Swithland',
+    city: 'Switchland',
     code: 'CH',
     color: '#8AB72B',
     coordinates: [46.57, 7.27],
     value: 10,
-  },
+  }, */
   {
     id: 9,
     city: 'Chile',
@@ -87,30 +87,30 @@ export default [
     coordinates: [50.05, 14.25],
     value: 10,
   },
-  {
+  /* {
     id: 12,
     city: 'Germany',
     code: 'DE',
     color: '#933157',
     coordinates: [52.3002, 13.2356],
     value: 10,
-  },
+  }, */
   {
     id: 13,
     city: 'Denmark',
     code: 'DK',
-    color: '#D2830B',
+    color: '#ef476f',
     coordinates: [55.4034, 12.3406],
     value: 10,
   },
-  {
+  /* {
     id: 14,
     city: 'Egypt',
     code: 'EG',
     color: '#ACB204',
     coordinates: [26.7, 30.75],
     value: 10,
-  },
+  }, */
   {
     id: 15,
     city: 'Finland',
@@ -164,7 +164,7 @@ export default [
     city: 'Indonesia',
     code: 'ID',
     color: '#5C9906',
-    coordinates: [6.103, 106.4942],
+    coordinates: [-5.103, 120.4942],
     value: 10,
   },
   {
@@ -183,22 +183,22 @@ export default [
     coordinates: [32.04, 34.47],
     value: 10,
   },
-  {
+  /* {
     id: 24,
     city: 'India',
     code: 'IN',
     color: '#A873CB',
     coordinates: [28.3648, 77.123],
     value: 10,
-  },
-  {
+  }, */
+  /* {
     id: 25,
     city: 'Italy',
     code: 'IT',
     color: '#B55062',
     coordinates: [41.54, 12.3],
     value: 10,
-  },
+  }, */
   {
     id: 26,
     city: 'Japan',
@@ -271,14 +271,14 @@ export default [
     coordinates: [-41.172, 174.4638],
     value: 10,
   },
-  {
+  /* {
     id: 35,
     city: 'Philippines',
     code: 'PH',
     color: '#83A577',
     coordinates: [14.35, 120.58],
     value: 10,
-  },
+  }, */
   {
     id: 36,
     city: 'Poland',
@@ -287,7 +287,7 @@ export default [
     coordinates: [52.1356, 21.003],
     value: 10,
   },
-  {
+  /* {
     id: 37,
     city: 'Portugal',
     code: 'PT',
@@ -374,5 +374,5 @@ export default [
     color: '#272898',
     coordinates: [21.02, 105.51],
     value: 10,
-  }
+  } */
 ];
