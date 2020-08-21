@@ -2,6 +2,7 @@ export default [
   {
     id: 1,
     city: 'United States',
+    code: 'US',
     color: '#6DA1AA',
     coordinates: [38.5342, -77.0212],
     value: 50,
@@ -9,6 +10,7 @@ export default [
   {
     id: 2,
     city: 'Argentina',
+    code: 'AR',
     color: '#28C552',
     coordinates: [-34.3612, -58.2254],
     value: 25,
@@ -16,6 +18,7 @@ export default [
   {
     id: 3,
     city: 'Austria',
+    code: 'AT',
     color: '#56DFAB',
     coordinates: [48.1232, 16.2221],
     value: 35,
@@ -23,6 +26,7 @@ export default [
   {
     id: 4,
     city: 'Australia',
+    code: 'AU',
     color: '#012864',
     coordinates: [-33.3129, 149.0728],
     value: 0,
@@ -30,6 +34,7 @@ export default [
   {
     id: 5,
     city: 'Belgium',
+    code: 'BE',
     color: '#F79915',
     coordinates: [50.51, 4.21],
     value: 80,
@@ -37,6 +42,7 @@ export default [
   {
     id: 6,
     city: 'Brazil',
+    code: 'BR',
     color: '#B53D32',
     coordinates: [-15.48, -47.54],
     value: 10,
@@ -44,6 +50,7 @@ export default [
   {
     id: 7,
     city: 'Canada',
+    code: 'CA',
     color: '#22C19D',
     coordinates: [45.2515, -75.4124],
     value: 10,
@@ -51,6 +58,7 @@ export default [
   {
     id: 8,
     city: 'Swithland',
+    code: 'CH',
     color: '#8AB72B',
     coordinates: [46.57, 7.27],
     value: 10,
@@ -58,6 +66,7 @@ export default [
   {
     id: 9,
     city: 'Chile',
+    code: 'CL',
     color: '#C08FF9',
     coordinates: [-33.27, -70.4],
     value: 10,
@@ -65,6 +74,7 @@ export default [
   {
     id: 10,
     city: 'Columbia',
+    code: 'CO',
     color: '#BA5497',
     coordinates: [-4.3553, -74.0433],
     value: 10,
@@ -72,6 +82,7 @@ export default [
   {
     id: 11,
     city: 'Czechia',
+    code: 'CZ',
     color: '#CAE1CD',
     coordinates: [50.05, 14.25],
     value: 10,
@@ -79,6 +90,7 @@ export default [
   {
     id: 12,
     city: 'Germany',
+    code: 'DE',
     color: '#933157',
     coordinates: [52.3002, 13.2356],
     value: 10,
@@ -86,6 +98,7 @@ export default [
   {
     id: 13,
     city: 'Denmark',
+    code: 'DK',
     color: '#D2830B',
     coordinates: [55.4034, 12.3406],
     value: 10,
@@ -93,6 +106,7 @@ export default [
   {
     id: 14,
     city: 'Egypt',
+    code: 'EG',
     color: '#ACB204',
     coordinates: [26.7, 30.75],
     value: 10,
@@ -100,6 +114,7 @@ export default [
   {
     id: 15,
     city: 'Finland',
+    code: 'FI',
     color: '#D39397',
     coordinates: [60.1015, 24.5615],
     value: 10,
@@ -107,6 +122,7 @@ export default [
   {
     id: 16,
     city: 'France',
+    code: 'FR',
     color: '#558990',
     coordinates: [48.5124, 2.2103],
     value: 10,
@@ -114,6 +130,7 @@ export default [
   {
     id: 17,
     city: 'United Kingdom',
+    code: 'GB',
     color: '#3C2561',
     coordinates: [51.3026, 0.0739],
     value: 10,
@@ -121,6 +138,7 @@ export default [
   {
     id: 18,
     city: 'Greece',
+    code: 'GR',
     color: '#0B9BC9',
     coordinates: [37.58, 23.43],
     value: 10,
@@ -128,6 +146,7 @@ export default [
   {
     id: 19,
     city: 'Hong Kong',
+    code: 'HK',
     color: '#9A3626',
     coordinates: [22.3453, 114.1372],
     value: 10,
@@ -135,6 +154,7 @@ export default [
   {
     id: 20,
     city: 'Hungary',
+    code: 'HU',
     color: '#3BD2E8',
     coordinates: [47.2819, 19.0301],
     value: 10,
@@ -142,6 +162,7 @@ export default [
   {
     id: 21,
     city: 'Indonesia',
+    code: 'ID',
     color: '#5C9906',
     coordinates: [6.103, 106.4942],
     value: 10,
@@ -149,6 +170,7 @@ export default [
   {
     id: 22,
     city: 'Ireland',
+    code: 'IE',
     color: '#1D7CC1',
     coordinates: [53.4, -8],
     value: 10,
@@ -156,6 +178,7 @@ export default [
   {
     id: 23,
     city: 'Israel',
+    code: 'IL',
     color: '#2D711A',
     coordinates: [32.04, 34.47],
     value: 10,
@@ -163,6 +186,7 @@ export default [
   {
     id: 24,
     city: 'India',
+    code: 'IN',
     color: '#A873CB',
     coordinates: [28.3648, 77.123],
     value: 10,
@@ -170,6 +194,7 @@ export default [
   {
     id: 25,
     city: 'Italy',
+    code: 'IT',
     color: '#B55062',
     coordinates: [41.54, 12.3],
     value: 10,
@@ -177,6 +202,7 @@ export default [
   {
     id: 26,
     city: 'Japan',
+    code: 'JP',
     color: '#FD3467',
     coordinates: [35.4202, 139.4254],
     value: 10,
@@ -184,6 +210,7 @@ export default [
   {
     id: 27,
     city: 'Kenya',
+    code: 'KE',
     color: '#4E480D',
     coordinates: [-1.17, 36.49],
     value: 10,
@@ -191,6 +218,7 @@ export default [
   {
     id: 28,
     city: 'Korea',
+    code: 'KR',
     color: '#31A567',
     coordinates: [37.34, 126.5841],
     value: 10,
@@ -198,6 +226,7 @@ export default [
   {
     id: 29,
     city: 'Mexico',
+    code: 'MX',
     color: '#491904',
     coordinates: [19.26, -99.08],
     value: 10,
@@ -205,6 +234,7 @@ export default [
   {
     id: 30,
     city: 'Malaysia',
+    code: 'MY',
     color: '#8C2593',
     coordinates: [3.0809, 101.4117],
     value: 10,
@@ -212,6 +242,7 @@ export default [
   {
     id: 31,
     city: 'Nigeria',
+    code: 'NG',
     color: '#C5D063',
     coordinates: [9.04, 7.29],
     value: 10,
@@ -219,6 +250,7 @@ export default [
   {
     id: 32,
     city: 'Netherlands',
+    code: 'NL',
     color: '#6C8DAF',
     coordinates: [52.2223, 4.5332],
     value: 10,
@@ -226,6 +258,7 @@ export default [
   {
     id: 33,
     city: 'Norway',
+    code: 'NO',
     color: '#028A5C',
     coordinates: [59.5658, 19.4523],
     value: 10,
@@ -233,6 +266,7 @@ export default [
   {
     id: 34,
     city: 'New Zealand',
+    code: 'NZ',
     color: '#27BB0E',
     coordinates: [-41.172, 174.4638],
     value: 10,
@@ -240,6 +274,7 @@ export default [
   {
     id: 35,
     city: 'Philippines',
+    code: 'PH',
     color: '#83A577',
     coordinates: [14.35, 120.58],
     value: 10,
@@ -247,6 +282,7 @@ export default [
   {
     id: 36,
     city: 'Poland',
+    code: 'PL',
     color: '#C9A268',
     coordinates: [52.1356, 21.003],
     value: 10,
@@ -254,6 +290,7 @@ export default [
   {
     id: 37,
     city: 'Portugal',
+    code: 'PT',
     color: '#A3E49F',
     coordinates: [38.4225, -7.0808],
     value: 10,
@@ -261,6 +298,7 @@ export default [
   {
     id: 38,
     city: 'Romania',
+    code: 'RO',
     color: '#AFAD84',
     coordinates: [44.2557, 26.0614],
     value: 10,
@@ -268,6 +306,7 @@ export default [
   {
     id: 39,
     city: 'Russia',
+    code: 'RU',
     color: '#4D1908',
     coordinates: [55.4506, 37.3704],
     value: 10,
@@ -275,6 +314,7 @@ export default [
   {
     id: 40,
     city: 'Saudi Arabia',
+    code: 'SA',
     color: '#0FFA02',
     coordinates: [24.4242, 46.4327],
     value: 10,
@@ -282,6 +322,7 @@ export default [
   {
     id: 41,
     city: 'Sweden',
+    code: 'SE',
     color: '#6AD49C',
     coordinates: [59.21, 18.04],
     value: 10,
@@ -289,6 +330,7 @@ export default [
   {
     id: 42,
     city: 'Singapore',
+    code: 'SG',
     color: '#EE5E34',
     coordinates: [1.17, 103.5],
     value: 10,
@@ -296,6 +338,7 @@ export default [
   {
     id: 43,
     city: 'Thailand',
+    code: 'TH',
     color: '#0C749B',
     coordinates: [13.3508, 100.2938],
     value: 10,
@@ -303,6 +346,7 @@ export default [
   {
     id: 44,
     city: 'Turkey',
+    code: 'TR',
     color: '#8EF436',
     coordinates: [39.523, 32.3],
     value: 10,
@@ -310,6 +354,7 @@ export default [
   {
     id: 45,
     city: 'Taiwan',
+    code: 'TW',
     color: '#C7C813',
     coordinates: [23.46, 121],
     value: 10,
@@ -317,6 +362,7 @@ export default [
   {
     id: 46,
     city: 'Ukraine',
+    code: 'UA',
     color: '#272898',
     coordinates: [50.27, 30.3124],
     value: 10,
@@ -324,6 +370,7 @@ export default [
   {
     id: 47,
     city: 'Vietnam',
+    code: 'VN',
     color: '#272898',
     coordinates: [21.02, 105.51],
     value: 10,
