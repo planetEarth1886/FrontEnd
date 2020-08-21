@@ -32,6 +32,8 @@ class Posts extends Component {
             }));
     }
 
+
+
     render() {
         /* 각 나라별 국기 보여주는 함수 */
         var emojiFlags = require('emoji-flags');
@@ -56,9 +58,12 @@ class Posts extends Component {
             </div>
 
         ));
+        const naverURL = "https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query="
+        const googleURL = "https://www.google.com/search?q="
         const keywordstitleList = keywords.map((keyword, index) => (
             <div key={keyword.title}>
-                {keyword.title}
+                {/* {keyword.title} */}
+                <a href={googleURL + keyword.title} target="_blank">{keyword.title}</a>
             </div>
         ));
         const keywordscontentList = keywords.map((keyword, index) => (
@@ -157,6 +162,7 @@ class Posts extends Component {
             </CardStack>
         );
     }
+
 }
 export default Posts;
 export { HelloCountry };
