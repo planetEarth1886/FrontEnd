@@ -1,5 +1,6 @@
 # ReactGlobe
 ![](src/img/main.png)
+![](src/img/play.gif)
 
 #### 
   if click the marker of KOREA (2020.08.22 15:00) 
