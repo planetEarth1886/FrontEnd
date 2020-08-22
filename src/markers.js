@@ -47,14 +47,14 @@ export default [
     coordinates: [-15.48, -47.54],
     value: 10,
   },*/
-  {
-    id: 7,
-    city: 'Canada',
-    code: 'CA',
-    color: '#22C19D',
-    coordinates: [45.2515, -75.4124],
-    value: 10,
-  },
+  // {
+  //   id: 7,
+  //   city: 'Canada',
+  //   code: 'CA',
+  //   color: '#22C19D',
+  //   coordinates: [45.2515, -75.4124],
+  //   value: 10,
+  // },
   /* {
     id: 8,
     city: 'Switchland',
