@@ -24,3 +24,4 @@ translates it into Korean, and provides it.
     2-2) npx serve -s build  
     (localhost will run at port 5000)  
     
+if you contact us, email to planetearth.dsc@gmail.com or lhky0708@gmail.com
