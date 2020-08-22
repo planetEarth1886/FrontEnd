@@ -2,7 +2,7 @@
 
 # ReactGlobe 🌎
 ![](src/img/main.png)
-  ![](src/img/play.gif)
+<center>![](src/img/play.gif)</center>
 
 #### 
   if click the marker of KOREA (2020.08.22 15:00) 
