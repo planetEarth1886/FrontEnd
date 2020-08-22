@@ -2,11 +2,11 @@
 
 # ReactGlobe 🌎
 ![](src/img/main.png)
-<p align="center"><img src="src/img/play.gif"></p>
 
 #### 
   if click the marker of KOREA (2020.08.22 15:00) 
   ![](src/img/KR.png)
+  <p align="center"><img src="src/img/play.gif"></p>
 
 
 ## Used
