@@ -3,8 +3,9 @@
 
 #### 
   if click the marker of KOREA (2020.08.22 15:00) 
-![](src/img/KR.png)
-##FrameWork
+![](src/img/KR.png  
+
+## Used
 * React.js + Node.js + Google Translate API
 
 ## Development goal
