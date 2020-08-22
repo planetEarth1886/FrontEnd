@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { CardStack, Card } from 'react-cardstack';
+import blackstyle from './blackstyle.css';
+
 /* 사용자가 클릭한 국가 코드 가져오는 함수들 */
 var country;
 function HelloCountry(props) {
@@ -84,8 +86,8 @@ class Posts extends Component {
                         {datesList}</font></h3></center>
                 </Card>
                 <Card background='#6F2B2C' borderRadius={15}>
-                    <ul><h3>{keywordstitleList[0]}</h3></ul>
-                    <font size="2">{keywordscontentList[0]}</font>
+                    <h3><ul>{keywordstitleList[0]}</ul></h3>
+                    <h6>{keywordscontentList[0]}</h6>
                 </Card>
                 <Card background='#924130' borderRadius={15}>
                     <h3>
@@ -93,7 +95,7 @@ class Posts extends Component {
                             {keywordstitleList[1]}
                         </ul>
                     </h3>
-                    <font size="2">{keywordscontentList[1]}</font>
+                    <h6>{keywordscontentList[1]}</h6>
                 </Card>
                 <Card background='#4D4B58' borderRadius={15}>
                     <h3>
